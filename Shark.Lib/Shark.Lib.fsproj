@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BouncyCastle" Version="1.8.5">
+      <NoWarn>NU1701</NoWarn>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="ResultWithState.fs" />
+    <Compile Include="Reader.fs" />
+    <Compile Include="Interpreter.fs" />
+    <Compile Include="ByteUtils.fs" />
+    <Compile Include="Digest.fs" />
+    <Compile Include="EllipticCurve.fs" />
+    <Compile Include="Ecc.fs" />
+    <Compile Include="Types.fs" />
+    <Compile Include="Serialization.fs" />
+    <Compile Include="Script.fs" />
+    <Compile Include="Transaction.fs" />
+  </ItemGroup>
+
+</Project>
